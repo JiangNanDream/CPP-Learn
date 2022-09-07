@@ -2,27 +2,37 @@
 
 /*
 	These codes show how long the different date types use.
+	int's range is -32768 ~ 32767
+	unsigned int's range is 0 ~ 65535
+	
+	
+	10: 10 35
+	8: 012 043
+	16: 0x10 0x23
 */
 int main()
 {
 	char ca = 'a';
 	short sa = 232;
-	int ia = 32768;
+	int ia = 32767;
 	long la = 2147483648;
 	long long lla = 1;
 	float fa = 1.5;
 	double da = 2.33;
 	
-	printf("\'char\' size is %d type\n", sizeof(ca));
-	printf("\'short\' size is %d type\n", sizeof(sa));
-	printf("\'int\' size is %d type\n", sizeof(ia));
-	printf("\'long\' size is %d type\n", sizeof(la));
-	printf("\'long long\' size is %d type\n", sizeof(lla));
-	printf("\'float\' size is %d type\n", sizeof(fa));
-	printf("\'double\' size is %d type\n", sizeof(da));
+	ia = 1000000;
+	printf("%d\n", ia);
+	printf("\'char\'\t size is %d type\n", sizeof(ca));
+	printf("\'short\'\t size is %d type\n", sizeof(sa));
+	printf("\'int\'\t size is %d type\n", sizeof(ia));
+	printf("\'long\'\t size is %d type\n", sizeof(la));
+	printf("\'long long\'\t size is %d type\n", sizeof(lla));
+	printf("\'float\'\t size is %d type\n", sizeof(fa));
+	printf("\'double\'\t size is %d type\n", sizeof(da));
 	
 	//I don't know what is different about int and long int.
-	printf("\'int\' size is %d type\n", sizeof(int));
-	printf("\'long int\' size is %d type\n", sizeof(long int));
+	printf("\'int\'\t size is %d type\n", sizeof(int));
+	printf("\'long int\'\t size is %d type\n", sizeof(long int));
+	printf("\'8L\'\t size is %d type\n", sizeof(8L));
 	
 }
