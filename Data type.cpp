@@ -20,4 +20,9 @@ int main()
 	printf("\'long long\' size is %d type\n", sizeof(lla));
 	printf("\'float\' size is %d type\n", sizeof(fa));
 	printf("\'double\' size is %d type\n", sizeof(da));
+	
+	//I don't know what is different about int and long int.
+	printf("\'int\' size is %d type\n", sizeof(int));
+	printf("\'long int\' size is %d type\n", sizeof(long int));
+	
 }
