@@ -15,11 +15,17 @@ int main()
 	int number;	//to record number
 	bool numState = false;	//to record wheather input number
 
-	scanf("%1d", &n);	//to read n
+	scanf("%d", &n);	//to read n
+	
+	//getchar();	//Fix1
 	
 	for (;n>0;n--)
 	{
-		scanf("%c", &word);
+		//scanf("%c", &word);	//error: cache ' '
+		//scanf("%c", &word);	//Fix1
+		//scanf("\t%c", &word);	//Fix2
+		scanf(" %c", &word);	//Fix3
+		
 		if (word>='a'&&word<='z' || word>='A'&&word<='Z')	//to judge word is a letter
 		{
 			//printf("This is a letter!\n");	//test message
