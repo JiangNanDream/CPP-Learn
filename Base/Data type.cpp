@@ -2,8 +2,8 @@
 
 /*
 	These codes show how long the different date types use.
-	int's range is -32768 ~ 32767
-	unsigned int's range is 0 ~ 65535
+	int's range is -32768 ~ 32767  //This's a old stand.
+	unsigned int's range is 0 ~ 65535  //This's a old stand.
 	
 	
 	10: 10 35
@@ -31,6 +31,7 @@ int main()
 	printf("\'double\'\t size is %d type\n", sizeof(da));
 	
 	//I don't know what is different about int and long int.
+	//It seems no difference.
 	printf("\'int\'\t size is %d type\n", sizeof(int));
 	printf("\'long int\'\t size is %d type\n", sizeof(long int));
 	printf("\'8L\'\t size is %d type\n", sizeof(8L));
