@@ -7,4 +7,4 @@
 -fexec-charset=gbk
 ```
 
-![Chinese_problem]([.\Chinese_problem.png](https://github.com/JiangNanDream/CPP-Learn/blob/main/other/Chinese_problem.png))
+![Chinese_problem](https://github.com/JiangNanDream/CPP-Learn/blob/main/other/Chinese_problem.png)
