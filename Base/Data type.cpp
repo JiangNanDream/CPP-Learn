@@ -6,12 +6,13 @@
 	unsigned int's range is 0 ~ 65535  //This's a old stand.
 	
 	
-	10: 10 35
-	8: 012 043
-	16: 0x10 0x23
+	10进制: 10 35
+	8进制: 012 043
+	16进制: 0x10 0x23
 */
 int main()
 {
+        //字符型使用单引号'a',"a"实际存储为'a','\0'
 	char ca = 'a';
 	short sa = 232;
 	int ia = 32767;
